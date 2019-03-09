@@ -1,0 +1,24 @@
+# setting npm
+> install nodjs
+> ไปที่ project 
+   $ npm init
+
+ได้ไฟล์ 
+# package.json มีไว้เพื่อบอกว่า project เราใช้ tool อะไร เวอร์ชั่นไหน
+
+   $ npm install node-sass --save-dev // คือ tool สำหรับ develop จะอยู่ใน devDependencies
+   $ npm install jquery แบบนี้อยู่ใน dependencies หมายถึงเป็น scriipt ที่ใช้ในโปรเจค
+      > สามารถลบออกได้ มันเป็นเครื่องใครเครื่องมัน
+
+  >   "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  }, เป็นการบอกว่าจะใช้คำสั่ง npm run sass เพื่อ complie scss เป็น css
+
+# กรณีมี scss partial ต้อง restart npm
+
+
+## Git 
+# Setting Git ignore ก่อน
+
+   $ git init
+   $ git add .

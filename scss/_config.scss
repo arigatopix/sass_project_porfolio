@@ -1,0 +1,19 @@
+// Variables
+$website-width: 1280px;
+$main-color: #ffbc00;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+// ให้มองว่า url นี้จะใช้กับไฟล์ main.css ซึ่ง directory ของ img อยู่นอก css
+$bg-image: url("../img/showcase.jpg");
+
+// Set Text color
+// คล้ายๆ function ของโปรแกรม
+// เปลี่ยนสีข้อความ เมื่อ .. เชคความสว่างของ .
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
